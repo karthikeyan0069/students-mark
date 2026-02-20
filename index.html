@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks Report</title>
+
+<style>
+
+/* ===== PAGE STYLE ===== */
+body{
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    width:90%;
+    max-width:900px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* ===== TABLE STYLE ===== */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+thead{
+    background:#007bff;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    font-size:16px;
+    letter-spacing:0.5px;
+}
+
+/* alternating rows */
+tbody tr:nth-child(even){
+    background:#f2f6ff;
+}
+
+tbody tr:hover{
+    background:#dfe9ff;
+    transition:0.3s;
+}
+
+/* ===== GRADE COLORS ===== */
+.grade-A{
+    color:green;
+    font-weight:bold;
+}
+
+.grade-B{
+    color:#ff9800;
+    font-weight:bold;
+}
+
+.grade-C{
+    color:#e53935;
+    font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    margin-top:15px;
+    font-size:14px;
+    color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 Student Marks Report</h1>
+
+<table>
+<thead>
+<tr>
+<th>Roll No</th>
+<th>Name</th>
+<th>Math</th>
+<th>Science</th>
+<th>English</th>
+<th>Total</th>
+<th>Grade</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>101</td>
+<td>Arun</td>
+<td>95</td>
+<td>90</td>
+<td>92</td>
+<td>277</td>
+<td class="grade-A">A</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Priya</td>
+<td>88</td>
+<td>84</td>
+<td>80</td>
+<td>252</td>
+<td class="grade-B">B</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Karthik</td>
+<td>76</td>
+<td>72</td>
+<td>70</td>
+<td>218</td>
+<td class="grade-B">B</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Meena</td>
+<td>65</td>
+<td>60</td>
+<td>58</td>
+<td>183</td>
+<td class="grade-C">C</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td>Rahul</td>
+<td>98</td>
+<td>94</td>
+<td>96</td>
+<td>288</td>
+<td class="grade-A">A</td>
+</tr>
+</tbody>
+</table>
+
+<div class="footer">
+Student Performance Dashboard • HTML Table Project
+</div>
+
+</div>
+
+</body>
+</html>
